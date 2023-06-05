@@ -7,8 +7,9 @@ class project extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       body: Container(
-        width: double.maxFinite,
-        height: double.maxFinite,
+        width: MediaQuery.of(context).size.width,
+        height: MediaQuery.of(context).size.height,
+        // height: double.maxFinite,
         decoration: BoxDecoration(
           gradient: LinearGradient(
             colors: [Color.fromARGB(255, 122, 69, 87), Colors.white],
